@@ -4,6 +4,8 @@ import android.support.test.rule.ActivityTestRule;
 import com.example.heitorcolangelo.espressotests.InstrumentedTests.ScreenLogin.constants.LoginConstants;
 import com.example.heitorcolangelo.espressotests.InstrumentedTests.ScreenLogin.robots.LoginRobot;
 import com.example.heitorcolangelo.espressotests.ui.activity.LoginActivity;
+
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -23,7 +25,7 @@ public class LoginInstrumentedTest {
                 .pressContinue()
                 .sleep(5);
     }
-
+    @Ignore
     @Test
     public void VerifyElements() throws Exception {
         new LoginRobot()
@@ -32,7 +34,7 @@ public class LoginInstrumentedTest {
                 .checkHintForEmailField()
                 .checkHintForPasslField();
     }
-
+    @Ignore
     @Test
     public void ClickContinueButton() throws Exception {
         new LoginRobot()

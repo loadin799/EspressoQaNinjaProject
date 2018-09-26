@@ -9,6 +9,7 @@ import com.example.heitorcolangelo.espressotests.InstrumentedTests.ListOfUsers.r
 import com.example.heitorcolangelo.espressotests.ui.activity.MainActivity;
 
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -28,7 +29,7 @@ public class ListInstrumentedTest {
     @Rule
     public ActivityTestRule<MainActivity>
             mActivityRule = new ActivityTestRule<>(MainActivity.class, false, true);
-
+    @Ignore
     @Test
     public void ScrollInList() throws Exception {
         new ListOfUsersRobot()
