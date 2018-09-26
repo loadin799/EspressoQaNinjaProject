@@ -13,7 +13,7 @@ jobs:
           key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
       - run:
           name: Download Dependencies
-          command: ./gradlew androidDependencies
+          command: - sudo ANDROID_HOME=/usr/local/android-sdk-linux ./gradlew dependencies
       - save_cache:
           paths:
             - ~/.gradle
