@@ -37,7 +37,7 @@ jobs:
           name: Run EspressoTests
           command: ./gradlew connecteddebugAndroidTest
       - store_artifacts:
-          path: app/build/reports/test-results
-          destination: test-results
+          path: app/build/reports
+          destination: reports
       - store_test_results:
-          path: app/build/reports/test-results
+          path: app/build/reports/test-results/mocha/results.xml
