@@ -40,4 +40,4 @@ jobs:
           path: app/build/reports
           destination: reports
       - store_test_results:
-          path: app/build/reports/androidTests/connected
+          path: app/build/reports/test-results
