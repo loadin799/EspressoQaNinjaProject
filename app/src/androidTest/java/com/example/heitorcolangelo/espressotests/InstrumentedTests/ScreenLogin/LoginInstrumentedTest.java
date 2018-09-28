@@ -1,15 +1,11 @@
 package com.example.heitorcolangelo.espressotests.InstrumentedTests.ScreenLogin;
-
 import android.support.test.rule.ActivityTestRule;
 import com.example.heitorcolangelo.espressotests.InstrumentedTests.ScreenLogin.constants.LoginConstants;
 import com.example.heitorcolangelo.espressotests.InstrumentedTests.ScreenLogin.robots.LoginRobot;
 import com.example.heitorcolangelo.espressotests.ui.activity.LoginActivity;
-
 import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-
 
 public class LoginInstrumentedTest {
 
