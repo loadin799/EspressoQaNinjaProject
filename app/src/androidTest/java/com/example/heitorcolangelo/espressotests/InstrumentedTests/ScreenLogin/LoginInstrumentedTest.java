@@ -19,7 +19,7 @@ public class LoginInstrumentedTest {
                 .writeEmail(LoginConstants.EMAIL_SUCCESS)
                 .writePassword(LoginConstants.PASS_SUCCESS)
                 .pressContinue()
-                .sleep(5);
+                .sleep(10);
     }
     @Ignore
     @Test
